@@ -8,21 +8,58 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
 .container {
+  display: flex;
   position: relative;
   font-size: 0.813;
   text-align: center;
   align-content: center;
   background-color: white;
-  width: 50%;
-  min-height: 20rem;
+  width: 45rem;
+  min-height: 17rem;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
-.article__preview {
+.img__container {
+  flex: 4;
+  overflow: hidden;
+}
+
+.article__image {
+  width: 122%;
+  height: 100%;
+}
+
+.article__page {
+  flex: 6;
+  font-size: 1rem;
+  padding: 1rem;
+}
+.article__header {
+  font-size: 1rem;
+}
+
+.article__words {
+  font-size: 1rem;
+}
+.article__details {
+}
+
+.article__avatar {
+  width: 10%;
+}
+.article__button {
+}
+.article__link {
+}
+
+.attribution {
+  bottom: 10rem;
+  position: absolute;
 }
