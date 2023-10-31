@@ -1,5 +1,6 @@
 html {
   background-color: hsl(210, 46%, 95%);
+  font-family: "Manrope", sans-serif;
 }
 
 body {
@@ -7,6 +8,7 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   height: 100vh;
 }
@@ -37,24 +39,24 @@ body {
 .article__page {
   flex: 6;
   font-size: 1rem;
-  padding: 1rem;
+  padding: 2rem;
+  text-align: left;
 }
 
 .article__header {
-  font-size: 1rem;
+  font-size: 1.3rem;
+  color: hsl(217, 19%, 35%);
 }
 
 .article__words {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: hsl(214, 17%, 51%);
 }
 
 .article__avatar {
   width: 10%;
-}
-
-.attribution {
-  bottom: 10rem;
-  position: absolute;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=styles.css.map */

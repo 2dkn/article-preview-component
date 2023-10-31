@@ -2,6 +2,7 @@
 
 html {
   background-color: $lightgrayblue;
+  font-family: $fontfamily;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   height: 100vh;
 }
@@ -39,20 +41,25 @@ body {
 .article__page {
   flex: 6;
   font-size: 1rem;
-  padding: 1rem;
+  padding: 2rem;
+  text-align: left;
 }
 .article__header {
-  font-size: 1rem;
+  font-size: 1.3rem;
+  color: $darkgrayblue;
 }
 
 .article__words {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: $desdarkblue;
 }
 .article__details {
 }
 
 .article__avatar {
   width: 10%;
+  border-radius: 50%;
 }
 .article__button {
 }
@@ -60,6 +67,5 @@ body {
 }
 
 .attribution {
-  bottom: 10rem;
-  position: absolute;
+  // display: flex;
 }
