@@ -21,7 +21,7 @@ body {
   font-size: 0.813;
   text-align: center;
   align-content: center;
-  background-color: white;
+  background-color: #ffffff;
   width: 45rem;
   min-height: 17rem;
   border-radius: 1rem;
@@ -41,20 +41,24 @@ body {
 .article__page {
   flex: 6;
   font-size: 1rem;
-  padding: 2rem;
+  padding: 2.1rem;
   text-align: left;
 }
 .article__header {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   color: $darkgrayblue;
+  line-height: 1.3;
+  font-weight: 700;
 }
 
 .article__words {
   font-size: 0.9rem;
-  line-height: 1.5;
+  line-height: 1.6;
   color: $desdarkblue;
 }
 .article__details {
+  display: flex;
+  justify-content: space-between;
 }
 
 .article__avatar {
@@ -62,10 +66,43 @@ body {
   border-radius: 50%;
 }
 .article__button {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: $lightgrayblue;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
-.article__link {
+
+.article__button:hover {
+  background-color: $desdarkblue;
+}
+
+.article__button:hover .share__btn {
+  filter: brightness(222);
+}
+
+.name__date {
+  flex: 1;
+  font-size: 0.8rem;
+}
+
+.name__date p {
+  padding: 0;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.name__date p:first-child {
+  color: $darkgrayblue;
+  font-weight: 700;
+}
+
+.name__date p:nth-child(2) {
+  color: $grayblue;
 }
 
 .attribution {
-  // display: flex;
+  padding-top: 3rem;
 }
